@@ -16,13 +16,14 @@
   ~ limitations under the License.
   -->
 
-<html class="no-js" lang="ja">
+<html class="no-js" lang="ug">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>kuromoji.js demo</title>
+    <title>kuromoji.js uyghur demo</title>
     <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Scheherazade" rel="stylesheet">
     <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
     <script src="bower_components/vue/dist/vue.min.js"></script>
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
@@ -35,12 +36,12 @@
 <div class="row">
     <div class="small-12 columns">
 
-        <h1>kuromoji.js demo</h1>
+        <h1>kuromoji.js uyghur demo</h1>
 
         <style id="css">
             text {
             font-weight: 300;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: 'Scheherazade', serif;
             font-size: 12px;
             }
 
@@ -69,8 +70,8 @@
                 </div>
 
                 <form v-show="!isLoading">
-                    <label>解析対象
-                        <input type="text" placeholder="解析したい文字列を入力してください"
+                    <label>ئانالىز قىلىدىغان جۈملە
+                        <input type="text" placeholder="ئانالىز قىلىدىغان جۈملىنى كىرگۈزۈڭ"
                                v-model="inputText" />
                         <input type="text" name="dummy" style="display:none;">
                     </label>
@@ -78,16 +79,14 @@
                     <table v-show="tokens.length" width="100%">
                         <thead>
                         <tr>
-                            <th>表層形</th>
-                            <th>品詞</th>
-                            <th>品詞細分類1</th>
-                            <th>品詞細分類2</th>
-                            <th>品詞細分類3</th>
-                            <th>活用型</th>
-                            <th>活用形</th>
-                            <th>基本形</th>
-                            <th>読み</th>
-                            <th>発音</th>
+                            <th>كۆرۈنۈش شەكلى</th>
+                            <th>سۆز تۈركۈمى</th>
+                            <th>تارماق 1</th>
+                            <th>تارماق 2</th>
+                            <th>تارماق 3</th>
+                            <th>ئۆزگىرىشى</th>
+                            <th>ھالىتى</th>
+                            <th>ئەسلى شەكلى</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -100,8 +99,6 @@
                             <td>{{token.conjugated_type}}</td>
                             <td>{{token.conjugated_form}}</td>
                             <td>{{token.basic_form}}</td>
-                            <td>{{token.reading}}</td>
-                            <td>{{token.pronunciation}}</td>
                         </tr>
                         </tbody>
                     </table>
