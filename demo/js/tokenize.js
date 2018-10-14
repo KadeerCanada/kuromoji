@@ -79,12 +79,12 @@ kuromoji.builder({ dicPath: DIC_URL }).build(function (error, _tokenizer) {
 
     vm.message = "Ready";
 
-    vm.inputText = "すもももももももものうち";
+    vm.inputText = "تۇنجى تۈركۈمدىكى ماشىنىلار كېلىدىغان بولدى.";
     vm.isLoading = false;
 });
 
 
-/*
+
 function drawLattice () {
     // Create a new directed graph
     var g = new dagreD3.Digraph();
@@ -168,4 +168,3 @@ function drawLattice () {
         .rankDir("LR");
     renderer.layout(layout).run(g, d3.select("svg g"));
 }
-*/
