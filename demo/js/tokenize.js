@@ -21,8 +21,8 @@
 var DIC_URL = "kuromoji/dict/";
 
 var tokenizer = null;
-// var lattice;  // Very large object. Unwatch this object from Model.
-// var renderer = new dagreD3.Renderer();
+var lattice;  // Very large object. Unwatch this object from Model.
+var renderer = new dagreD3.Renderer();
 
 
 var vm = new Vue({
@@ -35,26 +35,26 @@ var vm = new Vue({
         svgStyle: "hidden"
     },
     methods: {
-        /*
+        
         drawGraph: function () {
             if (lattice != null) {
                 drawLattice();
                 vm.svgStyle = "visible";
             }
         },
-        */
+        
         tokenize: function () {
             if (vm.inputText == "" || tokenizer == null) {
                 vm.tokens = [];
-                // lattice = null;
+                lattice = null;
                 return;
             }
             try {
-                // lattice = tokenizer.getLattice(vm.inputText);
+                lattice = tokenizer.getLattice(vm.inputText);
                 vm.tokens = tokenizer.tokenize(vm.inputText);
             } catch (e) {
                 console.log(e);
-                // lattice = null;
+                lattice = null;
                 vm.tokens = [];
             }
         }
@@ -64,7 +64,7 @@ var vm = new Vue({
 
 // フォームの内容が変化したらtokenizeする
 vm.$watch("inputText", function (value) {
-    // vm.graphEnabled = false;
+    vm.graphEnabled = false;
     vm.svgStyle = "hidden";
     vm.tokenize();
 });
