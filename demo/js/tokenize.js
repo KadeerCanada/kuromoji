@@ -21,8 +21,8 @@
 var DIC_URL = "kuromoji/dict/";
 
 var tokenizer = null;
-var lattice;  // Very large object. Unwatch this object from Model.
-var renderer = new dagreD3.Renderer();
+// var lattice;  // Very large object. Unwatch this object from Model.
+// var renderer = new dagreD3.Renderer();
 
 
 var vm = new Vue({
@@ -35,14 +35,14 @@ var vm = new Vue({
         svgStyle: "hidden"
     },
     methods: {
-        
+        /*
         drawGraph: function () {
             if (lattice != null) {
                 drawLattice();
                 vm.svgStyle = "visible";
             }
         },
-        
+        */
         tokenize: function () {
             if (vm.inputText == "" || tokenizer == null) {
                 vm.tokens = [];
@@ -84,7 +84,7 @@ kuromoji.builder({ dicPath: DIC_URL }).build(function (error, _tokenizer) {
 });
 
 
-
+/*
 function drawLattice () {
     // Create a new directed graph
     var g = new dagreD3.Digraph();
@@ -168,3 +168,4 @@ function drawLattice () {
         .rankDir("LR");
     renderer.layout(layout).run(g, d3.select("svg g"));
 }
+*/
