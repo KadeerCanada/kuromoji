@@ -1,10 +1,10 @@
 {
-  "name": "kuromoji-demo",
-  "homepage": "https://github.com/takuyaa/kuromoji.js",
+  "name": "kuromoji-uyghur-demo",
+  "homepage": "https://github.com/KadeerCanada/kuromoji",
   "authors": [
-    "Takuya Asano <takuya.a@gmail.com>"
+    "Kadeer <kadeer.canada@gmail.com>"
   ],
-  "description": "kuromoji.js demo",
+  "description": "kuromoji.js uyghur demo",
   "license": "MIT",
   "private": true,
   "ignore": [

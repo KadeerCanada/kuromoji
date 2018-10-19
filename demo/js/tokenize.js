@@ -62,7 +62,7 @@ var vm = new Vue({
 });
 
 
-// フォームの内容が変化したらtokenizeする
+// ماس قەدەمدە نەتىجىسىنى كۆرۈش
 vm.$watch("inputText", function (value) {
     vm.graphEnabled = false;
     vm.svgStyle = "hidden";
@@ -79,7 +79,7 @@ kuromoji.builder({ dicPath: DIC_URL }).build(function (error, _tokenizer) {
 
     vm.message = "Ready";
 
-    vm.inputText = "تۇنجى تۈركۈمدىكى ماشىنىلار كېلىدىغان بولدى.";
+    vm.inputText = "تۇنجى تۈركۈمدىكى ماشىنىلار كېلىدىغان بولۇپ قالدى.";
     vm.isLoading = false;
 });
 
