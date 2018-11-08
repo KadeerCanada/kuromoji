@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'UKIJ Tuz Tom';
+	src: url('UKIJTuzTom.eot?') format('eot'),  url('UKIJTuzTom.woff') format('woff'),  url('UKIJTuzTom.ttf') format('truetype'),  url('UKIJTuzTom.svg#UKIJ Tuz Tom') format('svg');
+}
+* {
+	font-size: 13px;
+	font-weight: normal;
+	font-family: "UKIJ Tuz Tom";
+}
