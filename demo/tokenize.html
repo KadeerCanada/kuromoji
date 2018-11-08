@@ -48,7 +48,7 @@
                 <form v-show="!isLoading">
                     <label>ئانالىز قىلىدىغان جۈملە
                         <input type="text" placeholder="ئانالىز قىلىدىغان جۈملىنى كىرگۈزۈڭ"
-                               v-model="inputText" onKeyPress="return addchar(this, event);" onKeyDown="return proc_kd(event);"/>
+                               v-model="inputText" onKeyDown="proc_kd(event);"/>
                         <input type="text" name="dummy" style="display:none;">
                     </label>
 
