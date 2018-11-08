@@ -30,6 +30,7 @@
     <script src="bower_components/foundation/js/vendor/fastclick.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="kuromoji/build/kuromoji.js"></script>
+    <script src="js/bedit.js"></script> 
 </head>
 <body>
 
@@ -46,7 +47,7 @@
                 <form v-show="!isLoading">
                     <label>ئانالىز قىلىدىغان جۈملە
                         <input type="text" placeholder="ئانالىز قىلىدىغان جۈملىنى كىرگۈزۈڭ"
-                               v-model="inputText" />
+                               v-model="inputText" onKeyPress="return addchar(this, event);" onKeyDown="return proc_kd(event);"/>
                         <input type="text" name="dummy" style="display:none;">
                     </label>
 
