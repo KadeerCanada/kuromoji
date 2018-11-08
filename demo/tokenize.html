@@ -23,13 +23,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>kuromoji.js uyghur demo</title>
     <link rel="stylesheet" href="bower_components/foundation/css/foundation.css"/>
-    <link href="fonts/font-face.css" rel="stylesheet">
     <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
     <script src="bower_components/vue/dist/vue.min.js"></script>
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
     <script src="bower_components/foundation/js/vendor/fastclick.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="kuromoji/build/kuromoji.js"></script>
+    <link href="fonts/font-face.css" rel="stylesheet">
 </head>
 <body>
 
@@ -37,30 +37,6 @@
     <div class="small-12 columns">
 
         <h1>ئۇيغۇرچە جۈملىلەرنى ئانالىز قىلىش</h1>
-
-        <style id="css">
-            * {
-            font-family: 'UKIJ Tuz Tom', serif !important;
-            }
-
-            .node rect {
-            stroke: #999;
-            stroke-width: 1px;
-            fill: #fff;
-            }
-
-            .edgeLabel rect {
-            fill: #fff;
-            }
-
-            .edgePath path {
-            stroke: #333;
-            stroke-width: 1.5px;
-            fill: none;
-            }
-        </style>
-
-
         <div id="demo" class="row">
             <div class="large-12 columns">
                 <div v-show="isLoading" data-alert="" class="alert-box radius">
