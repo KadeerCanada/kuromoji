@@ -5,11 +5,13 @@
 * {
 	font-size: 13px;
 	font-weight: normal;
-	font-family: 'UKIJ Tuz Tom', serif !important;
+	font-family: 'UKIJ Tuz Tom', serif;
 }
 
 #demo {
     direction: rtl;
+    font-family: 'UKIJ Tuz Tom', serif;
+    
 }
 
 .node rect {
