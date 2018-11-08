@@ -8,10 +8,9 @@
 	font-family: 'UKIJ Tuz Tom', serif;
 }
 
-#demo {
+body {
     direction: rtl;
     font-family: 'UKIJ Tuz Tom', serif;
-    
 }
 
 .node rect {
